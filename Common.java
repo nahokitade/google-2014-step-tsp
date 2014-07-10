@@ -78,7 +78,7 @@ public class Common{
 	 * Comment in and out the algorithms, for different algorithms. 
 	 */
 	public static void main(String[] args) throws IOException{
-		CityRoute newRoute = read_input("../input_5.csv");
+		CityRoute newRoute = read_input("/input_5.csv");
 		double routeDistance = newRoute.routeDistance();
 		System.out.println(routeDistance);	
 		//CityRoute solvedRoute = GreedyTSPSolver.greedySolver(newRoute);
@@ -92,7 +92,7 @@ public class Common{
 		System.out.println(solvedRoute);
 		routeDistance = solvedRoute.routeDistance();
 		System.out.println(routeDistance);
-		writeOutput("../solution_yours_5.csv", solvedRoute);
+		writeOutput("/solution_yours_5.csv", solvedRoute);
 
 
 	}
